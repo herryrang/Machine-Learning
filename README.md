@@ -36,6 +36,7 @@ We can see in above that all the data have outliers. But we consider to just rem
 And the year we make that only after 1978 production code because its already segmented if the car is already below 1978.
 
 And we just leave "mileage" and "engine_size" just as it is because engine_size doesnt matter and also mileage. 
+
 ![image](https://github.com/user-attachments/assets/72a82ae9-de55-4e55-8fa4-fb5505f3e29c)
 
 And then we drop the duplicates data, and also the unknown origin because it will make confuse later. And also we drop "negotiable" column because we think that we dont need it as the factor
@@ -44,6 +45,7 @@ of price prediction.
 ![image](https://github.com/user-attachments/assets/a2cc2c27-9cde-4658-a529-0ec307c57e05)
 
 And below are the correlation matrix, in correlation matrix we see that the factors that influenced the price is engine_size and year which is the correlation coefficient respectively at 0.38 and 0.31
+
 ![image](https://github.com/user-attachments/assets/d8887e4d-2238-4313-bbb2-93f80a778c1f)
 
 
@@ -58,29 +60,33 @@ After that we Split the data, and then for the Train:Test we make it 70:30 to ma
 
 
 After that we benchmarking the model, and then we get the best model which is RandomForestRegressor and XGBoost the best 2 models.
+
 ![image](https://github.com/user-attachments/assets/375f6e78-da61-48c3-a45c-843c8273c9cc)
 
 
 
 After we compare, we get that XGB is the best model so we will do hyperparameter tuning with XGB
+
 ![image](https://github.com/user-attachments/assets/a74ff184-517e-49e8-b7eb-e2022974ce59)
 
   
 
 After we do hyperparameter tuning, we can see that after the tuning the model less worsen
+
 ![image](https://github.com/user-attachments/assets/156fddbc-86a3-4f39-b00a-4086af0a97f2)
 
 Below are the scatter plot of Actual vs. Prediction Price, we can see from the car price in range 0-100000 SAR, we can see the actual and prediction are almost the same, but when we see above that price, we can see that the actual and prediction are different. 
+
 ![image](https://github.com/user-attachments/assets/1945668d-8cf3-452b-8772-5d40ad224e56)
 
 Below are the feature importances, we can see the 2 most feature that is important are "Year" and "Engine_Size"
+
 ![image](https://github.com/user-attachments/assets/e65146f3-561f-490d-9a7a-aafa22f393d0)
 
 
 Below are feature importances that we see on the table from the highest to the lowest.
+
 ![image](https://github.com/user-attachments/assets/e849c7d4-7483-4e15-84d3-75ca05253a8f)
-
-
 
 
 # Conclusions 
