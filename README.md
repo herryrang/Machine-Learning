@@ -19,9 +19,12 @@ The Objective of the Analysis that I do in this project are to provide recommend
 # Step by Step for make a model
 
 1. Data Understanding
+   
 ![image](https://github.com/user-attachments/assets/8bc56c89-51c2-4708-abb7-0f5fa6851520)
 
+
 2. Data Preprocessing
+   
 ![image](https://github.com/user-attachments/assets/19e955a2-879e-47bb-90f3-018aaa83c4f9)
 ![image](https://github.com/user-attachments/assets/72a82ae9-de55-4e55-8fa4-fb5505f3e29c)
 
@@ -31,6 +34,7 @@ The Objective of the Analysis that I do in this project are to provide recommend
 
 
 3. Modeling
+   
 ![image](https://github.com/user-attachments/assets/632b253b-f4fe-41d1-bb39-2db8ef7dc3c3)
 
 
