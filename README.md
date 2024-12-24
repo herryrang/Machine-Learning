@@ -19,17 +19,31 @@ The Objective of the Analysis that I do in this project are to provide recommend
 # Step by Step for make a model
 
 1. Data Understanding
-   
+
+In this process, first I need to understand the data contents. So, I write the code to see the data types, missing values, N unique, and the example of the unique. Below are the example of the table
+
 ![image](https://github.com/user-attachments/assets/8bc56c89-51c2-4708-abb7-0f5fa6851520)
 
 
 2. Data Preprocessing
-   
+
+In this process, I make data preprocessing that the first thing to do is by checking the outliers so we can see the extreme amount and we can consider to remove it to make the results more acceptable.  
+
 ![image](https://github.com/user-attachments/assets/19e955a2-879e-47bb-90f3-018aaa83c4f9)
+
+We can see in above that all the data have outliers. But we consider to just remove Price and Year. In Price we make the gap price between 3000 and 250000 SAR because we assume that the most of the buyers only buy the price of that car in that amount only. 
+
+And the year we make that only after 1978 production code because its already segmented if the car is already below 1978.
+
+And we just leave "mileage" and "engine_size" just as it is because engine_size doesnt matter and also mileage. 
 ![image](https://github.com/user-attachments/assets/72a82ae9-de55-4e55-8fa4-fb5505f3e29c)
+
+And then we drop the duplicates data, and also the unknown origin because it will make confuse later. And also we drop "negotiable" column because we think that we dont need it as the factor
+of price prediction.
 
 ![image](https://github.com/user-attachments/assets/a2cc2c27-9cde-4658-a529-0ec307c57e05)
 
+And below are the correlation matrix, in correlation matrix we see that the factors that influenced the price is engine_size and year which is the correlation coefficient respectively at 0.38 and 0.31
 ![image](https://github.com/user-attachments/assets/d8887e4d-2238-4313-bbb2-93f80a778c1f)
 
 
