@@ -48,30 +48,36 @@ And below are the correlation matrix, in correlation matrix we see that the fact
 
 
 3. Modeling
-   
+
+In this process, we change the categorical feature to numerical feature so we can train and test the data. And then in column "Gear_Type", "Origin", "Options" we make it as One Hot Encoder, and for "Type","Region","Make" we make it as Binary Encoder. 
+
+After that we Split the data, and then for the Train:Test we make it 70:30 to make it proportional.
+
 ![image](https://github.com/user-attachments/assets/632b253b-f4fe-41d1-bb39-2db8ef7dc3c3)
 
 
 
-
+After that we benchmarking the model, and then we get the best model which is RandomForestRegressor and XGBoost the best 2 models.
 ![image](https://github.com/user-attachments/assets/375f6e78-da61-48c3-a45c-843c8273c9cc)
 
 
 
-
+After we compare, we get that XGB is the best model so we will do hyperparameter tuning with XGB
 ![image](https://github.com/user-attachments/assets/a74ff184-517e-49e8-b7eb-e2022974ce59)
 
   
 
-
+After we do hyperparameter tuning, we can see that after the tuning the model less worsen
 ![image](https://github.com/user-attachments/assets/156fddbc-86a3-4f39-b00a-4086af0a97f2)
 
-
+Below are the scatter plot of Actual vs. Prediction Price, we can see from the car price in range 0-100000 SAR, we can see the actual and prediction are almost the same, but when we see above that price, we can see that the actual and prediction are different. 
 ![image](https://github.com/user-attachments/assets/1945668d-8cf3-452b-8772-5d40ad224e56)
 
-
+Below are the feature importances, we can see the 2 most feature that is important are "Year" and "Engine_Size"
 ![image](https://github.com/user-attachments/assets/e65146f3-561f-490d-9a7a-aafa22f393d0)
 
+
+Below are feature importances that we see on the table from the highest to the lowest.
 ![image](https://github.com/user-attachments/assets/e849c7d4-7483-4e15-84d3-75ca05253a8f)
 
 
